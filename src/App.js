@@ -7,9 +7,17 @@ import axios from 'axios';
 function App() {
   const [movies, setMovies] = useState([]);
 
+  useEffect(() => {
+    getAllMovies();
+  }, [])
+
+  async function getAllMovies() {
+    let response = await axios.get("http://localhost:8080/movies");
+    setMovies(response.data);
+  }
 
   return (
-    <div>
+    <div className="App">
       <MovieList movies={movies}/>
     </div>
   );
