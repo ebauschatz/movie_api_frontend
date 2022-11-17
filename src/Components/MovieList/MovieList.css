@@ -1,0 +1,10 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-list-title {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}

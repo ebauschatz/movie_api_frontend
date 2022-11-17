@@ -1,0 +1,14 @@
+.movie-text {
+    font-size: small;
+}
+
+.movie-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.movie-card {
+    width: 30%;
+    margin: 2rem;
+    box-shadow: 5px 5px 10px gray;
+}
